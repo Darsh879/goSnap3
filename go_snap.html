@@ -1,0 +1,82 @@
+<html>
+    <head>
+<title>Go Snap</title>
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <script src="go_snap.js"></script>
+    <style>
+        #logout
+        {
+          font-size: 20px;
+          float: right; 
+          background-color: red;
+        }
+        #add_room
+        {
+            width: 200px;
+            border-radius: 15px;
+            padding: 10px;
+        }
+        hr{
+            margin-top: 10px;
+            width: 100px;
+            margin-bottom: 10px;
+        }
+        #ad_Room
+        {
+            width: 200px;
+            background: linear-gradient(blue, red);
+            height: 25px;
+            font-size: 20px;
+        }
+        .down
+        {
+            margin-top: 150px;
+        }
+.back-background
+{
+background-image: url(background.svg);
+}
+.goSnap
+{
+	color: white;font-family: 'Yeon Sung';font-size: 45px;letter-spacing: 10px;
+}
+h2{
+    margin-bottom: 20px;
+}
+#snap
+{
+    height: 50px;
+}
+
+.trend{
+    font-size: 20px;
+    font-family:initial;
+}
+#output
+{
+	padding: 10px; width:80%;background: green;border-radius: 15px;
+}
+
+    </style>
+    <body class="back-background">
+    <div class="container">
+        <button id="logout" onclick="logout()">LOGOUT</button>
+        <h1 class="goSnap">GO SNAP<sup><img id="snap" src="snapngo-logo.png"></sup></h1>
+        <center class="down">
+            <h3 id="name" style="color: black;"></h3> 
+            <br> 
+<h2> Chat with anyone</h2>
+<br>
+<input id="add_room" placeholder="ADD YOUR ROOM">
+<br>
+<hr>
+<button id="ad_room" onclick="addRoom();">ADD ROOM</button>
+<br>
+<br>
+<h3 class="trend"><B><i>TRENDING ROOMS!!!</i></B></h3>
+<div id="output"></div>
+        </center>
+    </div>
+    </body>
+</html>

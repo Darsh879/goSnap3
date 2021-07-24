@@ -1,0 +1,67 @@
+<html>
+    <head>
+<title>MESSAGE</title>
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <script src="go_page.js"></script>
+    <style>
+         #logout
+        {
+          font-size: 20px;
+          float: right; 
+          background-color: red;
+        }
+        .back-background
+{
+background-image: url(background.svg);
+}
+.goSnap
+{
+	color: white;font-family: 'Yeon Sung';font-size: 45px;letter-spacing: 10px;
+}
+#snap
+{
+    height: 50px;
+}
+.message_page
+{
+	position: fixed;bottom: 0px;width: 100%;background: darkslategrey;
+}
+
+#msg
+{
+    width:500px;
+    padding: 10px;
+    margin: 15px;
+}
+#send
+{
+background-color: chartreuse;
+height: 25px;
+}
+#output
+{
+	padding: 10px; width:80%;background: green;border-radius: 15px;
+}
+    </style>
+    <body class="back-background">
+        <div class="container">
+            <button id="logout" onclick="logout()">LOGOUT</button>
+            <h1 class="goSnap">GO SNAP<sup><img id="snap" src="snapngo-logo.png"></sup></h1>
+<center>
+    <h3>PLEASE CHECK FOR YOUR MESSAGES</h3>
+    <div id="output"></div>
+</center>
+
+
+
+
+            <center>
+                <div class="message_page">
+                    <input type="text" id="msg"  placeholder="message">
+                    <button id="send" onclick="send()">SEND</button>
+                </div>
+            </center>
+        </div>
+        </body>
+</html>
